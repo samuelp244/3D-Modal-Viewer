@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className='flex text-lg justify-between gap-4 mx-6 my-2 '>
             <a 
                 className='flex gap-2 hover:underline' 
-                href="https://github.com/samuelp244/beersheba-main/blob/main/main/src/Components/HomeComponents/Navbar.tsx"
+                href="https://github.com/samuelp244/3D-modal-viewer"
                 >
                     <span className='my-auto'><BsGithub/></span>
                     <p>Source</p>
