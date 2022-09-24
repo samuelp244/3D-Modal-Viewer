@@ -10,7 +10,8 @@ interface UploadFileProps{
 const UploadFile = (props:UploadFileProps) => {
     const [modelName,setModelName] = useState("")
     const [file,setFile] = useState<Blob>()
-    const [FileError,setFileError] = useState(false) 
+    const [ShowFileError,setShowFileError] = useState(false) 
+    const [FileError,setFileError]= useState("")
 
     const handlefilenamechange = (e: FormEvent)=>{
         e.preventDefault();
@@ -41,7 +42,7 @@ const UploadFile = (props:UploadFileProps) => {
                 queryClient.invalidateQueries()
             }
         }else{
-            setFileError(true)
+            setShowFileError(true)
         }
         
     } 
@@ -69,7 +70,8 @@ const UploadFile = (props:UploadFileProps) => {
                         className='w-full'
                         onChange={onChange}
                         />
-                        {FileError?<div className=" font-sans text-xs font-light text-red-600">Choose a file and Enter a model Name</div>:null}
+                        {ShowFileError?<div className=" font-sans text-xs font-light text-red-600">Choose a file and Enter a model Name</div>:null}
+                        <div className=" font-sans text-xs font-light text-red-600">{FileError}</div>
                         <button
                         className='bg-[#00ADB5] p-1 hover:bg-[#65e9f0da] rounded text-black font-medium'
                         onClick={onSubmit}
