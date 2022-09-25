@@ -7,11 +7,11 @@ This app was built to render and interact with 3D models. The user can upload a 
 
 
 ## Libraries/tech Used
-#### `Frontend` - React.js(Typescript)
+#### `Frontend` - React.js
  - #### `react-three` - React three.js library which is used to render the canvas and the 3D modal
  - #### `react-query` - to fetch and cache the list of models to show in the dashboard.
  - #### `axios` - for client-side Rest Api library
-#### `Backend` - Express.js(Typescript)
+#### `Backend` - Express.js
  - #### `express-fileupload` - used in a post request endpoint to access file from request and upload the file to the cliennt folder 
  - #### `mongoose` - library to connect and access mongodb
 #### `Database` - Mongodb
