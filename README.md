@@ -24,11 +24,11 @@ This app was built to render and interact with 3D models. The user can upload a 
 - #### `src`
     - #### `api` - This folder holds api queries 
     - #### `components` -
-          - `Dashboard.tsx` -  page which lists all the modal names stored in the mongodb database
-          - `ModelScreen.tsx` - page which has the canvas which show the 3D modal
-          - `Navbar.tsx` - Navbar Component 
-          - `UploadFile.tsx` - Component with the form to upload the modal 
-          - `Model.tsx` - component which renders the modal
+     - `Dashboard.tsx` -  page which lists all the modal names stored in the mongodb database
+     - `ModelScreen.tsx` - page which has the canvas which show the 3D modal
+     - `Navbar.tsx` - Navbar Component 
+     - `UploadFile.tsx` - Component with the form to upload the modal 
+     - `Model.tsx` - component which renders the modal
    - #### `App.tsx` 
    - #### `index.tsx` 
  
