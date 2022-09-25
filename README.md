@@ -3,6 +3,15 @@
 Live - https://www.3dviewer.cf/
 
 ## Libraries/tech Used
+#### `Frontend` - React.js(Typescript)
+ - #### `React-three` - React three.js library which is used to render the canvas and the 3D modal
+ - #### `React-Query` - to fetch and cache the list of models to show in dashboard.
+ - #### `axios` - for client side Rest Api library
+#### `Backend` - Express.js(Typescript)
+ - #### `express-fileupload` - used in a post request end point to access file from request and upload the file to the cliennt folder 
+ - #### `mongoose` - library to connect and access mongodb
+#### `Database` - Mongodb
+
 
 
 ## File structure
