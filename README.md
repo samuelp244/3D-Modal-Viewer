@@ -8,13 +8,13 @@ Live - https://www.3dviewer.cf/
 - #### `src`
     - #### `api` - This folder holds api queries 
     - #### `components` - This folder holds all of the different components that will make up our views
-          - #### `Dashboard.tsx` -  page which lists all the modal names stored in the mongodb database
-          - #### `ModelScreen.tsx` -
-          - #### `Navbar.tsx` -
-          - #### `UploadFile.tsx` -
-          - #### `Model.tsx` -
-    - #### `App.tsx` - This is what renders all of our browser routes and different views
-    - #### `index.tsx` 
+     - #### `Dashboard.tsx` -  page which lists all the modal names stored in the mongodb database
+     - #### `ModelScreen.tsx` -
+     - #### `Navbar.tsx` -
+     - #### `UploadFile.tsx` -
+     - #### `Model.tsx` -
+   - #### `App.tsx` - This is what renders all of our browser routes and different views
+   - #### `index.tsx` 
  
 #### `server` - server application
 - #### `client` -
