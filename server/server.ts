@@ -27,7 +27,7 @@ app.post('/upload',(req:Request,res:Response)=>{
             FileName:file.name
         })
     }catch(err){
-        console.log(err)
+        res.send({error:err})
     }
     res.send({fileName:file.name})
 })
@@ -46,9 +46,11 @@ app.get('/getUploadsList',async(req:Request,res:Response)=>{
 app.get('/test',(req:Request,res:Response)=>{
     res.send("test success")
 })
+
 app.get('*',(req,res)=>{
     res.sendFile(path.join(__dirname,'./client/index.html'))
 })
-app.listen(3000,()=>{
-    console.log("app listening at 3000")
+
+app.listen(1337,()=>{
+    console.log("app listening at 1337")
 })

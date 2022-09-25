@@ -40,6 +40,8 @@ const UploadFile = (props:UploadFileProps) => {
             if(res.status===200){
                 props.closeModel()
                 queryClient.invalidateQueries()
+            }else{
+                setFileError(res.data.error)
             }
         }else{
             setShowFileError(true)

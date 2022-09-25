@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 
 
-export const BASE_URL = ""
+export const BASE_URL = "http://localhost:1337"
 // "http://localhost:1337"
 
 interface FilesListProps{
