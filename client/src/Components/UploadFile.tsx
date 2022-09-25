@@ -60,7 +60,7 @@ const UploadFile = (props:UploadFileProps) => {
                         <input 
                             type="text"
                             name="fileName"
-                            className='text-black border border-black bg-slate-200 rounded px-3'
+                            className='text-black border border-black bg-slate-200 w-36 md:w-44'
                             // defaultValue={fileName}
                             onChange={handlefilenamechange}
                             />
