@@ -21,7 +21,7 @@ const UploadFile = (props:UploadFileProps) => {
     const onChange=(e: FormEvent): void =>{
         const target = e.target as HTMLInputElement
         if(target.files!==null) setFile(target.files[0])
-        console.log(target.name)
+        // console.log(target.name)
     }
     const queryClient = useQueryClient()
 
@@ -31,7 +31,7 @@ const UploadFile = (props:UploadFileProps) => {
         if (file!==undefined &&modelName!==""){
             formData.append('file',file);
             formData.append('modelName',modelName);
-            console.log(file)
+            // console.log(file)
             const res = await axios.post(`${BASE_URL}/upload`,formData,{
                     headers:{
                         'Content-Type':'multipart/form-data'
