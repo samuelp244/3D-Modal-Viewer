@@ -51,6 +51,6 @@ app.get('*',(req,res)=>{
     res.sendFile(path.join(__dirname,'./client/index.html'))
 })
 
-app.listen(1337,()=>{
-    console.log("app listening at 1337")
+app.listen(3000,()=>{
+    console.log("app listening at 3000")
 })
